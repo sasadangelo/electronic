@@ -2,6 +2,8 @@
 
 This is my first project after years of not creating electronics projects. The project is a simple circuit that consists of a LED, a 390-ohm resistor, and a 9V battery. Below is an overview of the circuit, the design process, and my real-world testing results.
 
+[Click here](https://oshwlab.com/sasadangelo/rrrrrrrrr) to access the EasyEDA circuit.
+
 ## Schema
 
 ![Simple Led Circuit](assets/img/simple-led.png)
@@ -66,7 +68,7 @@ When simulating the circuit in EasyEDA, I found the following results:
 - The LED’s junction voltage in the simulation was **1.843V**.
 - The LED current in the simulation was **18mA**.
 
-### Conclusion
+## Conclusion
 
 This project demonstrates how theoretical calculations may differ from real-world results. Always consider potential variations in real-world components, and use simulations as a starting point for design, but expect minor differences when testing physically.
 
