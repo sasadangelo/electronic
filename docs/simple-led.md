@@ -23,7 +23,7 @@ Where:
 
 Substituting the values:
 
-R = (9V - 1.7V)}/0.020A = 365 Ohms
+R = (9V - 1.7V)/0.020A = 365 Ohms
 
 The closest commercially available resistor is **390 ohms**, so that’s what I used.
 
