@@ -2,6 +2,10 @@
 
 This is my first project after years of not creating electronics projects. The project is a simple circuit that consists of a LED, a 390-ohm resistor, and a 9V battery. Below is an overview of the circuit, the design process, and my real-world testing results.
 
+## Schema
+
+![Simple Led Circuit](docs/assets/img/simple-led.png)
+
 ## Circuit Description
 
 The circuit is made up of:

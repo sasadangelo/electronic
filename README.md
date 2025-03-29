@@ -9,8 +9,8 @@ This repository is divided into sections, each related to a different level of d
 ### 1. **Beginner Circuits**
 In this section, you will find simple circuits perfect for those starting their journey into electronics. These projects focus on basic components like resistors, capacitors, LEDs, and simple connections.
 
-#### Example Projects:
-- **Basic LED Circuit**: A simple circuit to light up an LED with a resistor.
+#### Projects:
+- **Simple LED**: A [simple circuit](docs/simple-led.md) to light up an LED with a resistor.
 - **Voltage Divider**: Learn how to divide voltage in a circuit using resistors.
 
 ### 2. **Intermediate Circuits**
