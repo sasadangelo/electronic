@@ -4,7 +4,7 @@ This is my first project after years of not creating electronics projects. The p
 
 ## Schema
 
-![Simple Led Circuit](docs/assets/img/simple-led.png)
+![Simple Led Circuit](assets/img/simple-led.png)
 
 ## Circuit Description
 
