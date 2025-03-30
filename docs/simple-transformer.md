@@ -8,7 +8,7 @@ This is a simple project I created to test how transformers work in EasyEDA afte
 
 ![Simple Transformer Circuit](assets/img/simple-transformer.png)
 
-## Circuit Description
+## Circuit Description
 
 A transformer is a passive electrical device made of two inductively coupled coils: the primary and secondary. When alternating current (AC) flows through the primary coil, it generates a magnetic field that induces a voltage in the secondary coil. This allows us to change the voltage level without direct electrical connection.
 
