@@ -31,6 +31,17 @@ The turns ratio becomes:
 
 **Turns ratio** = 53 / 1000 = 0.053
 
+In AC circuits, voltages are often given in RMS (Root Mean Square), which is a measure of effective voltage. To understand the waveform fully, we need to calculate the **peak** (Vp) and **peak-to-peak** (Vpp) voltages. If the RMS voltage on the secondary is 12V, then:
+
+**Peak voltage (Vp)** = RMS × √2 ≈ 12V × 1.414 ≈ 16.97V
+**Peak-to-peak voltage (Vpp)** = 2 × Vp ≈ 2 × 16.97V ≈ 33.94V
+
+So:
+
+**Vp (peak)** ≈ 16.97V
+
+**Vpp (peak-to-peak)** ≈ 33.94V
+
 ## Design Insights
 
 - This simulation assumes ideal transformer behavior, with no power loss.
