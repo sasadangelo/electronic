@@ -21,15 +21,15 @@ Both coils are usually wrapped around a common iron core to enhance magnetic cou
 
 If the primary has N = 1000 turns, then the voltage per turn is:
 
-Voltage per turn = 230V / 1000 = 0.23V
+**Voltage per turn** = 230V / 1000 = 0.23V
 
 To obtain an output of 12V, we need:
 
-Turns on secondary = 12V / 0.23V ≈ 52.17 → ~53 turns
+**Turns on secondary** = 12V / 0.23V ≈ 52.17 → ~53 turns
 
 The turns ratio becomes:
 
-Turns ratio = 53 / 1000 = 0.053
+**Turns ratio** = 53 / 1000 = 0.053
 
 ## Design Insights
 
