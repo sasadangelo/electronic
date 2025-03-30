@@ -47,6 +47,12 @@ I primarily use the following tools for designing and simulating my circuits:
 - **Fritzing**: For creating circuit diagrams and PCB layouts.
 - **KiCad**: For advanced PCB design.
 
+## Web Resources
+
+The following are some resources I use for my electronic projects:
+
+* [Open-Electronics Resources](https://github.com/ajaymnk/open-electronics)
+
 ## Contact and Feedback
 If you have any questions, feedback, or want to share your own experiments, feel free to open an issue or contact me directly.
 
