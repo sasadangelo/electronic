@@ -10,8 +10,8 @@ This repository is divided into sections, each related to a different level of d
 In this section, you will find simple circuits perfect for those starting their journey into electronics. These projects focus on basic components like resistors, capacitors, LEDs, and simple connections.
 
 #### Projects:
-- **Simple LED**: A [simple circuit](docs/simple-led.md) to light up an LED with a resistor.
-- **Voltage Divider**: Learn how to divide voltage in a circuit using resistors.
+- **Simple LED**: a [simple circuit](docs/simple-led.md) to light up an LED with a resistor.
+- **Simple Transformer**: a [simple circuit](docs/simple-transformer.md) to convert 230 V AC in 12 V AC.
 
 ### 2. **Intermediate Circuits**
 This section contains more complex projects that involve additional components such as transistors, diodes, and sensors. These circuits are ideal for those who have a basic understanding and want to explore more challenging concepts.
