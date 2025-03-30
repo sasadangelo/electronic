@@ -42,6 +42,10 @@ So:
 
 **Vpp (peak-to-peak)** ≈ 33.94V
 
+The following figure shows the wave form of the voltage on the resistor:
+
+![Simple Transformer Circuit Waveform](assets/img/simple-transformer-waveform.png)
+
 ## Design Insights
 
 - This simulation assumes ideal transformer behavior, with no power loss.
