@@ -3,6 +3,7 @@
 This is my first project after years of not creating electronics projects. The project is a simple circuit that consists of a LED, a 390-ohm resistor, and a 9V battery. Below is an overview of the circuit, the design process, and my real-world testing results.
 
 [Click here](https://oshwlab.com/sasadangelo/circuit-simple-led) to access the EasyEDA circuit.
+[Click here]([https://oshwlab.com/sasadangelo/circuit-simple-led](https://tinyurl.com/2b2w58od)) to access the Falstad circuit.
 
 ## Schema
 
