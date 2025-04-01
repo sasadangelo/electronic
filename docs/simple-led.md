@@ -4,7 +4,7 @@ This is my first project after years of not creating electronics projects. The p
 
 [Click here](https://oshwlab.com/sasadangelo/circuit-simple-led) to access the EasyEDA circuit.
 
-[Click here]([https://oshwlab.com/sasadangelo/circuit-simple-led](https://tinyurl.com/2b2w58od)) to access the Falstad circuit.
+[Click here](https://tinyurl.com/2b2w58od) to access the Falstad circuit.
 
 ## Schema
 
