@@ -4,6 +4,8 @@ This is a simple project I created to test how transformers work in EasyEDA afte
 
 [Click here](https://oshwlab.com/sasadangelo/transformer) to access the EasyEDA circuit.
 
+[Click here](https://tinyurl.com/287936ge) to access the Falstad circuit.
+
 ## Schema
 
 ![Simple Transformer Circuit](assets/img/simple-transformer.png)
