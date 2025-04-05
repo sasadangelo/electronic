@@ -24,7 +24,7 @@ The circuit consists of:
 * **Load Resistor**: Variable resistance to simulate different current draws
 * **Voltage Probes**: Used to measure waveforms and voltages before and after the rectifier
 
-## Circuit Description
+## Circuit Calculation
 
 The transformer outputs 12V RMS AC, which corresponds to a peak voltage of:
 
@@ -40,8 +40,6 @@ Voutrms = Vpout / √2 ≈ 11V
 ```
 
 However, real components behave slightly differently due to tolerances and current dependency.
-
-## Circuit Calculation
 
 In the actual simulation:
 
