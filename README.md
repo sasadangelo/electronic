@@ -12,6 +12,7 @@ In this section, you will find simple circuits perfect for those starting their 
 #### Projects:
 - **Simple LED**: a [simple circuit](docs/simple-led.md) to light up an LED with a resistor.
 - **Simple Transformer**: a [simple circuit](docs/simple-transformer.md) to convert 230 V AC in 12 V AC.
+- **Graetz Bridge**: a [simple circuit](docs/graetz-bridge.md) to convert 230 V AC in 12 V AC.
 
 ### 2. **Intermediate Circuits**
 This section contains more complex projects that involve additional components such as transistors, diodes, and sensors. These circuits are ideal for those who have a basic understanding and want to explore more challenging concepts.
