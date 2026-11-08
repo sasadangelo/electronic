@@ -197,6 +197,8 @@ Everything else builds on this. Short experiments, mostly multimeter work.
 
 ## Track 6 – Real Devices: How They Work
 
+👉 See also the **[Device Roadmap](devices.md)**: everyday devices ordered from simple to complex, with typical faults.
+
 **Goal:** take everyday devices, find their blocks, measure their signals, then rebuild or emulate them.
 Each experiment = **teardown + block diagram + measurements + a breadboard replica**.
 

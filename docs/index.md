@@ -7,6 +7,7 @@ A progressive path of electronics experiments: calculate, simulate, build, measu
 ## Start here
 
 - 🗺️ **[Roadmap](roadmap.md)**: all tracks, experiments and the suggested order.
+- 🔧 **[Device Roadmap](devices.md)**: everyday devices from simple to complex, how they work and how to repair them.
 
 ## Experiments
 
