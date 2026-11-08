@@ -5,7 +5,8 @@ Welcome to my GitHub repository dedicated to electronics experiments and project
 ## Learning Path
 
 👉 See the **[ROADMAP](docs/roadmap.md)** for the full progressive path, organized by tracks:
-Foundations, Power Supplies, Audio/Hi-Fi, Digital Logic, Radio Frequency, Microcontrollers.
+Foundations, Power Supplies, Audio/Hi-Fi, Digital Logic, Radio Frequency, Microcontrollers,
+Real Devices (how they work), Troubleshooting & Repair, Build Your Own Instruments, PCB Design.
 New experiments use the [template](docs/_template.md).
 
 🌐 Project site with interactive simulations: https://sasadangelo.github.io/electronic/

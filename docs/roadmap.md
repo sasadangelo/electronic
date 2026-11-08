@@ -186,16 +186,118 @@ Everything else builds on this. Short experiments, mostly multimeter work.
 
 ---
 
+## Track 6 – Real Devices: How They Work
+
+**Goal:** take everyday devices, find their blocks, measure their signals, then rebuild or emulate them.
+Each experiment = **teardown + block diagram + measurements + a breadboard replica**.
+
+| ID | Device | You learn | Experiment | Prereq | Status |
+|---|---|---|---|---|---|
+| DV-01 | Flashlight / LED bulb | Current regulation, LED drivers | Measure LED current; replicate with PS-08 | F-01, PS-08 | ⬜ |
+| DV-02 | Infrared remote control | 38 kHz carrier, pulse coding (NEC, RC5) | See IR pulses with a photodiode + scope; decode with Arduino | DG-03, MC-03 | ⬜ |
+| DV-03 | IR receiver (TV side) | Demodulator module (TSOP), filtering | Build a receiver that switches a relay | DV-02 | ⬜ |
+| DV-04 | IR remote clone | Transmitting codes | Arduino that replays your TV remote | DV-02 | ⬜ |
+| DV-05 | Electret microphone | JFET inside, bias resistor | Bias it, see the signal on the scope | AN-02 | ⬜ |
+| DV-06 | Dynamic mic & speaker | Electromagnetic transducers, they're reversible | Use a speaker as a microphone | AN-07 | ⬜ |
+| DV-07 | MEMS microphone (I²S) | Digital audio from a chip | Record with ESP32 | MC-08 | ⬜ |
+| DV-08 | Headphones & wired earbuds | Impedance, sensitivity, inline mic/buttons | Measure impedance; decode button presses | AN-08 | ⬜ |
+| DV-09 | Portable AM/FM radio | Superheterodyne in a real product | Trace signal stage by stage | RF-05, RF-08 | ⬜ |
+| DV-10 | 433 MHz remote (gate, garage, doorbell) | OOK coding, rolling codes vs. fixed codes | Capture with RTL-SDR; ⚠️ only your own devices | RF-07, RF-10 | ⬜ |
+| DV-11 | Smoke detector | Low-power sensing, piezo buzzer | Measure standby current, alarm circuit | MC-12 | ⬜ |
+| DV-12 | Battery charger & power bank | Li-ion charging, boost, protection | Charge/discharge curves | PS-11, PS-12 | ⬜ |
+| DV-13 | Toy RC car | RF link, H-bridge, servo | Map receiver → motor driver | MC-06, RF-10 | ⬜ |
+| DV-14 | Computer ATX power supply | Standby rail, PFC, multiple outputs | ⚠️ unplugged & discharged only: identify blocks | PS-13 | ⬜ |
+
+**Capstone DV-X:** pick a device you own, document its full block diagram and schematic (reverse-engineered).
+
+---
+
+## Track 7 – Troubleshooting & Repair
+
+**Goal:** be able to diagnose and fix a large range of devices.
+Start from battery-powered, low-voltage devices; mains-powered ones only at the end.
+
+Extra tools for this track: desoldering pump and wick, flux, magnifier/USB microscope,
+ESR meter (the component tester does it), hot-air station for SMD, and a **series-lamp limiter**
+(a light bulb in series with the mains plug) before powering up any repaired mains device.
+
+| ID | Skill / Repair | You learn | Practice on | Status |
+|---|---|---|---|---|
+| RP-01 | Soldering & desoldering THT | Good joints, removing parts without damage | Practice kit, old boards | ⬜ |
+| RP-02 | SMD soldering | 0805 resistors, SOIC chips, hot air | SMD practice kit | ⬜ |
+| RP-03 | Reading schematics & service manuals | Symbols, block diagrams, test points | Manuals of devices you own | ⬜ |
+| RP-04 | The troubleshooting method | Symptom → hypothesis → measure → isolate | Any faulty device | ⬜ |
+| RP-05 | Power first | Check fuse, rails, ripple: most faults are in the PSU | DV devices | ⬜ |
+| RP-06 | Component testing in/out of circuit | Diodes, transistors, caps (ESR), shorts | Component tester + multimeter | ⬜ |
+| RP-07 | Classic failures | Dried electrolytics, cold joints, broken cables/connectors, dirty pots | Old audio gear | ⬜ |
+| RP-08 | Signal tracing | Inject a signal, follow it until it disappears | Radio, amplifier | ⬜ |
+| RP-09 | Repair: remote control | Contacts, crystal/resonator, IR LED | A dead remote | ⬜ |
+| RP-10 | Repair: headphones / cables | Broken wires, jacks | Faulty headphones | ⬜ |
+| RP-11 | Repair: battery toys & gadgets | Battery contacts, motor drivers, switches | Broken toys | ⬜ |
+| RP-12 | Repair: audio amplifier | Bias, output transistors, protection relay | Old Hi-Fi amp | ⬜ |
+| RP-13 | Repair: switching power supply | Fuse, bridge, primary cap, controller | ⚠️ discharge primary cap; use series lamp | ⬜ |
+| RP-14 | Repair log | Document each repair like an experiment | All of the above | ⬜ |
+
+⚠️ **Never open:** microwave ovens (lethal capacitor and transformer), CRT TVs, and anything with
+large mains capacitors you can't safely discharge.
+
+**Capstone RP-X:** fix 10 different devices from friends/family and document them in `docs/repairs/`.
+
+---
+
+## Track 8 – Build Your Own Instruments
+
+**Goal:** understand how measuring instruments work, and their limits, by building them.
+Every instrument you build also upgrades your lab.
+
+| ID | Instrument | You learn | Prereq | Status |
+|---|---|---|---|---|
+| IN-01 | Understanding your multimeter | Accuracy, resolution, burden voltage, input impedance | F-01, F-02 | ⬜ |
+| IN-02 | Logic probe | Thresholds, high/low/pulse detection | DG-02 | ⬜ |
+| IN-03 | Continuity tester with tone | 555 oscillator, low test current | DG-03 | ⬜ |
+| IN-04 | Electronic DC load | Op-amp + MOSFET constant current, heat | F-10, PS-08 | ⬜ |
+| IN-05 | Frequency counter (Arduino) | Gating, timers, input conditioning | MC-09 | ⬜ |
+| IN-06 | LC meter | Oscillator frequency → L and C | RF-04, IN-05 | ⬜ |
+| IN-07 | Transistor curve tracer | Ic vs. Vce, gain, using the scope in X-Y mode | F-07, AN-02 | ⬜ |
+| IN-08 | Arduino/ESP32 oscilloscope & logic analyzer | Sampling, triggering, Nyquist | MC-10 | ⬜ |
+| IN-09 | Signal injector / tracer | Square wave rich in harmonics, audio probe | RP-08 | ⬜ |
+| IN-10 | Calibration & accuracy | Voltage references, comparing instruments | All of the above | ⬜ |
+
+**Capstone IN-X:** a benchtop "lab box" combining electronic load, frequency counter and LC meter in one enclosure.
+
+---
+
+## Track 9 – PCB Design (KiCad)
+
+**Goal:** turn breadboard experiments into finished boards, and work with SMD parts.
+
+| ID | Step | You learn | Status |
+|---|---|---|---|
+| PCB-01 | Perfboard / stripboard layout | Planning a layout by hand | ⬜ |
+| PCB-02 | KiCad schematic | Symbols, nets, ERC | ⬜ |
+| PCB-03 | KiCad layout: first board (F-01 LED + battery) | Footprints, traces, DRC, Gerbers | ⬜ |
+| PCB-04 | Ordering a PCB (JLCPCB / PCBWay) | Fab rules, cost, turnaround | ⬜ |
+| PCB-05 | Trace width, current & heat | Copper thickness, power paths | ⬜ |
+| PCB-06 | Ground planes & decoupling | Why every chip has a 100 nF cap next to it | ⬜ |
+| PCB-07 | SMD board assembly | Stencil, solder paste, hot air (with RP-02) | ⬜ |
+| PCB-08 | Board for a switching converter | Loop area, layout makes or breaks PS-10 | ⬜ |
+| PCB-09 | Mixed analog/digital board | Separating noisy and quiet sections | ⬜ |
+| PCB-10 | Enclosure & front panel | 3D-printed or drilled box, connectors | ⬜ |
+
+**Capstone PCB-X:** your bench supply (PS-X) or amplifier (AN-X) on a custom PCB, in an enclosure.
+
+---
+
 ## Suggested Order
 
 The tracks are parallel, but this order keeps prerequisites satisfied:
 
 | Phase | Do | Unlocks |
 |---|---|---|
-| 1 | F-01…F-06, PS-03…PS-04, MC-03…MC-04, RF-02 | Basic measurement skills; first "wow" (radio without batteries) |
-| 2 | F-07…F-10, PS-05…PS-08, DG-01…DG-05, AN-01…AN-03 | Transistors & op-amps in real circuits |
-| 3 | AN-04…AN-09, RF-01, RF-03…RF-07, DG-06…DG-09, MC-05…MC-09 | Oscillators, amplifiers, logic |
-| 4 | PS-09…PS-13, AN-10…AN-13, RF-08…RF-10, MC-10…MC-12 | Switching & modern techniques |
+| 1 | F-01…F-06, PS-03…PS-04, MC-03…MC-04, RF-02, RP-01, DV-01, IN-01, PCB-01 | Basic measurement skills; first "wow" (radio without batteries) |
+| 2 | F-07…F-10, PS-05…PS-08, DG-01…DG-05, AN-01…AN-03, RP-03…RP-06, DV-05, IN-02…IN-03 | Transistors & op-amps in real circuits |
+| 3 | AN-04…AN-09, RF-01, RF-03…RF-07, DG-06…DG-09, MC-05…MC-09, DV-02…DV-08, RP-02, RP-07…RP-11, IN-04…IN-07, PCB-02…PCB-06 | Oscillators, amplifiers, logic |
+| 4 | PS-09…PS-13, AN-10…AN-13, RF-08…RF-10, MC-10…MC-12, DV-09…DV-14, RP-12…RP-13, IN-08…IN-10, PCB-07…PCB-10 | Switching & modern techniques |
 | 5 | Capstones | Full devices you designed and understand |
 
 ---
@@ -211,3 +313,29 @@ When the tracks are done, you should be able to open these and name every block:
 | FM/DAB radio | RF (superhet/SDR) + AN + PS |
 | Smart plug | PS (non-isolated buck) + MC (ESP32) + F (relay) |
 | Computer | DG + MC + PS (buck converters on the motherboard) |
+| TV remote & receiver | DG (555, coding) + MC + F (IR LED, photodiode) |
+| Microphone (electret, dynamic, MEMS) | AN (preamp) + MC (I²S) |
+| Garage / gate remote | RF (433 MHz, OOK) + DG |
+
+And when one of them breaks, Track 7 gives you the method to fix it.
+
+---
+
+## Future Ideas
+
+Areas to explore once the main tracks are well under way:
+
+| Area | What's inside | Why |
+|---|---|---|
+| Motors & power electronics | DC, stepper, brushless (BLDC); ESCs, inverters | How drones, e-bikes, washing machines, PC fans work |
+| Synthesizers & music electronics | VCO, VCF, ADSR, guitar effects (fuzz, overdrive, delay) | Fun projects mixing analog, audio and digital |
+| Energy & solar | Panels, MPPT, BMS, UPS, home energy monitoring | Real-world power systems |
+| Displays & optoelectronics | LCD, OLED, e-ink, LED matrices, photodiodes, fiber | How screens and optical links work |
+| Automotive electronics | CAN bus, OBD-II, ECUs | Talk to your car with an ESP32 |
+| Home automation | Home Assistant, ESPHome, Zigbee | Natural follow-up of Track 5 |
+| Biosignals | ECG (AD8232), heart rate | ⚠️ Battery only, never with a mains-connected PC |
+| FPGA & digital design | Verilog, build your own CPU | Follow-up of Track 3 |
+| DSP | Digital filters, FFT | Noise-cancelling headphones, digital audio |
+| Noise, grounding & EMC | Hum, interference, shielding | What separates "works" from "works well" |
+| Amateur radio license | Legal transmitting, home-built transmitters | If the RF track hooks you (exam at MIMIT, Italy) |
+| Vintage electronics | Tube radios and amplifiers restoration | ⚠️ 250–400 V: only with solid experience |
