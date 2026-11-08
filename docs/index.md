@@ -16,4 +16,8 @@ A progressive path of electronics experiments: calculate, simulate, build, measu
 | PS-01 | [Simple Transformer](simple-transformer.md) | Power Supplies |
 | PS-02 | [Graetz Bridge](graetz-bridge.md) | Power Supplies |
 
+## Reference
+
+- 🎨 [Resistor color code](resistor-color-code.md)
+
 Source code and circuits: [github.com/sasadangelo/electronic](https://github.com/sasadangelo/electronic)

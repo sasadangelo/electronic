@@ -18,7 +18,7 @@ when LED voltage, battery voltage and resistor value all differ from their nomin
 | Qty | Component | Notes |
 |---|---|---|
 | 1 | Red LED, 5 mm | |
-| 1 | Resistor 390 Ω, ¼ W | ±5% tolerance |
+| 1 | Resistor 390 Ω, ¼ W | ±5%, orange · white · brown · gold ([color code](resistor-color-code.md)) |
 | 1 | 9 V battery | Alkaline |
 | 1 | Multimeter | Voltage and current |
 
