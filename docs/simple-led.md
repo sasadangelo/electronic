@@ -76,11 +76,13 @@ and one across the LED, so all values are visible at a glance.
 
 | Quantity | Value |
 |---|---|
-| Resistor voltage | ≈ 7.0 V |
-| LED voltage | ≈ 2.0 V |
-| Current | ≈ 18 mA |
+| Resistor voltage | 7.2 V |
+| LED voltage | 1.8 V |
+| Current | 18.5 mA |
 
-The simulator confirms the 2.0 V design value for a red LED at this current.
+Falstad's LED model sits at 1.8 V, the low end of the red range (1.8–2.1 V), so the current is a bit higher
+than designed. The 0.2 V difference from the 2.0 V design value changes the current by only 0.5 mA (≈ 3%):
+at 9 V the design value is good enough, as explained in *Design Guidelines*.
 Note that **V resistor + V LED = 9 V**: Kirchhoff's voltage law, visible directly on the meters.
 
 The simulated ammeter is ideal (zero resistance). A real multimeter on its mA range is not:
@@ -91,8 +93,8 @@ see *Why Reality Differs* below.
 | Quantity | Calculated (design) | Simulated (Falstad) | Measured | Δ vs. design |
 |---|---|---|---|---|
 | Battery voltage | 9 V | 9 V | 9.76 V (no load) | +8% |
-| LED voltage | 2.0 V | ≈ 2.0 V | 2.12 V | +6% |
-| Current | 17.9 mA | ≈ 18 mA | 16 mA (ammeter) | −11% |
+| LED voltage | 2.0 V | 1.8 V | 2.12 V | +6% |
+| Current | 17.9 mA | 18.5 mA | 16 mA (ammeter) | −11% |
 
 Now recalculate using **my measured values**:
 
