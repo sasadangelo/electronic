@@ -39,11 +39,20 @@ the oscilloscope ground clip is connected to earth – never clip it on a mains-
 
 ## Simulation Tools
 
-| Tool | Use it for | Why |
-|---|---|---|
-| **Falstad CircuitJS** (default) | Tracks 0–3, quick experiments | Runs in the browser, animated current flow, built-in scope. A circuit is plain text: save it in the repo, share it as a link |
-| **LTspice** (or ngspice) | Accurate numbers: switching converters (PS-10+), audio distortion (AN-05+), RF (RF-04+) | Real manufacturer models, AC sweep / Bode plots, FFT |
-| KiCad | Schematic → PCB for the experiments worth keeping | Free, open source, industry-grade PCB design |
+Few tools, introduced one at a time, only when a track needs them. All free and available on macOS.
+
+| Tool | Use it for | Tracks | When to start |
+|---|---|---|---|
+| **Falstad CircuitJS** (default) | Understanding how a circuit behaves: animated current, built-in scope and meters. Circuits are plain text, saved in the repo and embedded in the site | 0, 1, 2, 3, concepts of 4 | Now |
+| **Wokwi** (wokwi.com) | Arduino / ESP32 **with your own code**, sensors, displays, WiFi. Embeddable like Falstad | 5, 6, 8 | Track 5 |
+| **KiCad** (with built-in ngspice simulator) | Schematic → PCB, and accurate simulation of the same schematic: real models, Bode plots, FFT, switching efficiency | 9, then 1 (PS-10+), 2 (AN-05+) | Track 9 |
+| LTspice (alternative to KiCad's simulator) | Same as above, with many manufacturer models | 1, 2, 4 | Only if needed |
+| CircuitVerse (browser) / Logisim Evolution | Complex digital logic, up to building a CPU | 3, FPGA | If Track 3 hooks you |
+| Qucs-S | RF: filters, impedance matching, S-parameters | 4 | If Track 4 hooks you |
+| SDR++ + RTL-SDR | Not a simulator: the real radio spectrum on your PC | 4, 6 | RF-07 |
+
+What Falstad **can't** do: microcontroller code, manufacturer SPICE models, AC sweep / precise distortion,
+antennas and high-frequency parasitics, thermal behaviour, PCB layout. Tracks 7 (repair) need the bench, not a simulator.
 
 Workflow: in Falstad use *File → Export As Text*, save it as `docs/sim/<ID>-<name>.txt`,
 and put the share link (*File → Export As Link*) in the experiment doc, both as a link and as an embedded `<iframe>`

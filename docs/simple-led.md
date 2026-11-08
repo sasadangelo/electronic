@@ -24,9 +24,9 @@ when LED voltage, battery voltage and resistor value all differ from their nomin
 
 ## Schema
 
-[Open the Falstad simulation](https://www.falstad.com/circuit/circuitjs.html?ctz=DwYwlgTgBAZgvAIgIwKgFwM6IAwDpsEECsqYIiSeATAVQOx0DM2AHFQGwCcndqIARoiLZUAB0EJhqAG4QhqALaYhAUwC0SFAD4AUFCjBpUAB4U67KIyJUoSc7fOp4CEVADuz1woCGx6Yk4EAHpdfWA3EzMLOwtmABYHdiccYNCDaFMEeMSoOMYbGOSXVDkszhEQvQMAGQBRABFIhDyC+xbLayKqRQB7RAATFRhvAFcAGzQ1MZV+vlKUKBAAcxTFiS9+chd8FEqwiMz2q1bYztgUvYMlppiOk8sWOKKKtOBjJroWKA4vpGFvugLZxPKAYMAUJLoFQBABqUH43jQaBUEAAnqkqm8mlZsLY4pxLJxGLYzsDUGCIahkYhGOUoIBK4AxYXeh2sAJscRYxPoJHOzXJ4OQkOpCDq9QxwCC4AguiAA) · source: [sim/F-01-simple-led.txt](sim/F-01-simple-led.txt) (*File → Import From Text*)
+[Open the Falstad simulation](https://www.falstad.com/circuit/circuitjs.html?ctz=DwYwlgTgBAZgvAIgIwKgFwM6IAwDpsEECsqYIiSeATAVQOx0DM2AHFQGwCcndqIARoiLZUAB0EJhqAG4QhqALaYhAUwC0SFAD4AUFCjBpUAB4U67KIyJUoSc7fOp4CEVADuz1woCGx6Yk4EAHpdfWA3EzMLOwsqKgAWB3YnHGDQgwBBBQUVNBVoUwQ4xJioKhYWJJTkRRVUqAxyFzS9AwjC8srS5hLHWFSQ1uACxB6kqHjGGxjq1zkERk4RQbCAGQBRABFIhEnp+z3La2qqRQB7RAATFRhvAFcAGzQ1B5VLvnmUKBAAc3qBeoKfhNPDYFArNo7Q5WfYWGGzFphH47brWcaMFjxBEQ8I7MbdbCJTjJfrNHHtRCHUqHYnY9LAUR4wlQYkTKYsknOL45eqNeoQOpk+kU3bs0pEdjYKqk5bCqHsmFQCVS+EyxEGRmFZXjbWqrm1Xkg1ACgb04w7SVldhddn0L7OLENMAUEl5AIANSg-G8aDyEAAnurgOaOlQiLYiIlypwI7xSY6MM7kK7BVkcn6gyHRvESvE4Sw6LZ4oF46hEy7UG6FksoIBK4EzePoUHYNkWiXYJFLTor6EFnoFiYwaDOEAbhXiaPoNniLEYZTonYdZaTSBTiA2mzHQh4ZWLzcmZWOXfLycrfagG5awCC4AguiAA) · source: [sim/F-01-simple-led.txt](sim/F-01-simple-led.txt) (*File → Import From Text*)
 
-<iframe src="https://www.falstad.com/circuit/circuitjs.html?ctz=DwYwlgTgBAZgvAIgIwKgFwM6IAwDpsEECsqYIiSeATAVQOx0DM2AHFQGwCcndqIARoiLZUAB0EJhqAG4QhqALaYhAUwC0SFAD4AUFCjBpUAB4U67KIyJUoSc7fOp4CEVADuz1woCGx6Yk4EAHpdfWA3EzMLOwtmABYHdiccYNCDaFMEeMSoOMYbGOSXVDkszhEQvQMAGQBRABFIhDyC+xbLayKqRQB7RAATFRhvAFcAGzQ1MZV+vlKUKBAAcxTFiS9+chd8FEqwiMz2q1bYztgUvYMlppiOk8sWOKKKtOBjJroWKA4vpGFvugLZxPKAYMAUJLoFQBABqUH43jQaBUEAAnqkqm8mlZsLY4pxLJxGLYzsDUGCIahkYhGOUoIBK4AxYXeh2sAJscRYxPoJHOzXJ4OQkOpCDq9QxwCC4AguiAA" width="100%" height="500" style="border:1px solid #ccc" title="Simple LED – Falstad simulation"></iframe>
+<iframe src="https://www.falstad.com/circuit/circuitjs.html?ctz=DwYwlgTgBAZgvAIgIwKgFwM6IAwDpsEECsqYIiSeATAVQOx0DM2AHFQGwCcndqIARoiLZUAB0EJhqAG4QhqALaYhAUwC0SFAD4AUFCjBpUAB4U67KIyJUoSc7fOp4CEVADuz1woCGx6Yk4EAHpdfWA3EzMLOwsqKgAWB3YnHGDQgwBBBQUVNBVoUwQ4xJioKhYWJJTkRRVUqAxyFzS9AwjC8srS5hLHWFSQ1uACxB6kqHjGGxjq1zkERk4RQbCAGQBRABFIhEnp+z3La2qqRQB7RAATFRhvAFcAGzQ1B5VLvnmUKBAAc3qBeoKfhNPDYFArNo7Q5WfYWGGzFphH47brWcaMFjxBEQ8I7MbdbCJTjJfrNHHtRCHUqHYnY9LAUR4wlQYkTKYsknOL45eqNeoQOpk+kU3bs0pEdjYKqk5bCqHsmFQCVS+EyxEGRmFZXjbWqrm1Xkg1ACgb04w7SVldhddn0L7OLENMAUEl5AIANSg-G8aDyEAAnurgOaOlQiLYiIlypwI7xSY6MM7kK7BVkcn6gyHRvESvE4Sw6LZ4oF46hEy7UG6FksoIBK4EzePoUHYNkWiXYJFLTor6EFnoFiYwaDOEAbhXiaPoNniLEYZTonYdZaTSBTiA2mzHQh4ZWLzcmZWOXfLycrfagG5awCC4AguiAA" width="100%" height="500" style="border:1px solid #ccc" title="Simple LED – Falstad simulation"></iframe>
 
 *Interactive on the [project site](https://sasadangelo.github.io/electronic/simple-led); on github.com use the link above.*
 
@@ -71,14 +71,20 @@ See also the [LED Wikipedia page](https://it.wikipedia.org/wiki/LED).
 ## Simulation Results
 
 Falstad uses its `default-led` model (a red LED) with an ideal 9 V source.
-Hover over each component to read voltage and current.
+The circuit includes an **ammeter** in series and two **voltmeters**, one across the resistor
+and one across the LED, so all values are visible at a glance.
 
 | Quantity | Value |
 |---|---|
+| Resistor voltage | ≈ 7.0 V |
 | LED voltage | ≈ 2.0 V |
-| LED current | ≈ 18 mA |
+| Current | ≈ 18 mA |
 
 The simulator confirms the 2.0 V design value for a red LED at this current.
+Note that **V resistor + V LED = 9 V**: Kirchhoff's voltage law, visible directly on the meters.
+
+The simulated ammeter is ideal (zero resistance). A real multimeter on its mA range is not:
+see *Why Reality Differs* below.
 
 ## Real-World Measurements
 
