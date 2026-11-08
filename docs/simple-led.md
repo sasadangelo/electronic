@@ -4,11 +4,13 @@ This is my first project after years of not creating electronics projects. The p
 
 [Click here](https://oshwlab.com/sasadangelo/circuit-simple-led) to access the EasyEDA circuit.
 
-[Click here](https://tinyurl.com/2b2w58od) to access the Falstad circuit.
+[Click here](https://www.falstad.com/circuit/circuitjs.html?ctz=DwYwlgTgBAZgvAIgIwKgFwM6IAwDpsEECsqYIiSeATAVQOx0DM2AHFQGwCcndqIARoiLZUAB0EJhqAG4QhqALaYhAUwC0SFAD4AUFCjBpUAB4U67KIyJUoSc7fOp4CEVADuz1woCGx6Yk4EAHpdfWA3EzMLOwtmABYHdiccYNCDaFMEeMSoOMYbGOSXVDkszhEQvQMAGQBRABFIhDyC+xbLayKqRQB7RAATFRhvAFcAGzQ1MZV+vlKUKBAAcxTFiS9+chd8FEqwiMz2q1bYztgUvYMlppiOk8sWOKKKtOBjJroWKA4vpGFvugLZxPKAYMAUJLoFQBABqUH43jQaBUEAAnqkqm8mlZsLY4pxLJxGLYzsDUGCIahkYhGOUoIBK4AxYXeh2sAJscRYxPoJHOzXJ4OQkOpCDq9QxwCC4AguiAA) to access the Falstad circuit (source: [sim/F-01-simple-led.txt](sim/F-01-simple-led.txt), import it with *File → Import From Text*).
 
 ## Schema
 
-![Simple Led Circuit](assets/img/simple-led.png)
+<iframe src="https://www.falstad.com/circuit/circuitjs.html?ctz=DwYwlgTgBAZgvAIgIwKgFwM6IAwDpsEECsqYIiSeATAVQOx0DM2AHFQGwCcndqIARoiLZUAB0EJhqAG4QhqALaYhAUwC0SFAD4AUFCjBpUAB4U67KIyJUoSc7fOp4CEVADuz1woCGx6Yk4EAHpdfWA3EzMLOwtmABYHdiccYNCDaFMEeMSoOMYbGOSXVDkszhEQvQMAGQBRABFIhDyC+xbLayKqRQB7RAATFRhvAFcAGzQ1MZV+vlKUKBAAcxTFiS9+chd8FEqwiMz2q1bYztgUvYMlppiOk8sWOKKKtOBjJroWKA4vpGFvugLZxPKAYMAUJLoFQBABqUH43jQaBUEAAnqkqm8mlZsLY4pxLJxGLYzsDUGCIahkYhGOUoIBK4AxYXeh2sAJscRYxPoJHOzXJ4OQkOpCDq9QxwCC4AguiAA" width="100%" height="500" style="border:1px solid #ccc" title="Simple LED – Falstad simulation"></iframe>
+
+*Interactive on the [project site](https://sasadangelo.github.io/electronic/simple-led); on github.com use the Falstad link above.*
 
 ## Circuit Description
 

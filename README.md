@@ -2,6 +2,14 @@
 
 Welcome to my GitHub repository dedicated to electronics experiments and projects. Here, I share a collection of electronic circuits, schematics, and detailed explanations for various levels of experience, from beginner to advanced. Each project includes my personal notes, observations, and tips for those who want to learn and deepen their understanding of electronics.
 
+## Learning Path
+
+👉 See the **[ROADMAP](docs/roadmap.md)** for the full progressive path, organized by tracks:
+Foundations, Power Supplies, Audio/Hi-Fi, Digital Logic, Radio Frequency, Microcontrollers.
+New experiments use the [template](docs/_template.md).
+
+🌐 Project site with interactive simulations: https://sasadangelo.github.io/electronic/
+
 ## Contents
 
 This repository is divided into sections, each related to a different level of difficulty. You can explore the projects to find one that suits your skill level!
