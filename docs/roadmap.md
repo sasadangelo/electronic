@@ -6,7 +6,7 @@ A progressive path from basic circuits to understanding how today's devices work
 Every experiment follows the same loop:
 
 1. **Theory** – calculate what you expect.
-2. **Simulate** – EasyEDA / Falstad (link the circuit).
+2. **Simulate** – Falstad (link and embed the circuit); LTspice when precision matters.
 3. **Build** – breadboard first, perfboard/PCB for the ones worth keeping.
 4. **Measure** – compare with the calculation in a table.
 5. **Explain the gap** – why reality differs (tolerances, parasitics, datasheet limits).
@@ -43,7 +43,7 @@ the oscilloscope ground clip is connected to earth – never clip it on a mains-
 |---|---|---|
 | **Falstad CircuitJS** (default) | Tracks 0–3, quick experiments | Runs in the browser, animated current flow, built-in scope. A circuit is plain text: save it in the repo, share it as a link |
 | **LTspice** (or ngspice) | Accurate numbers: switching converters (PS-10+), audio distortion (AN-05+), RF (RF-04+) | Real manufacturer models, AC sweep / Bode plots, FFT |
-| EasyEDA | Schematic → PCB for the experiments worth keeping | Simulation is heavier, but goes straight to PCB |
+| KiCad | Schematic → PCB for the experiments worth keeping | Free, open source, industry-grade PCB design |
 
 Workflow: in Falstad use *File → Export As Text*, save it as `docs/sim/<ID>-<name>.txt`,
 and put the share link (*File → Export As Link*) in the experiment doc, both as a link and as an embedded `<iframe>`

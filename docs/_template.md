@@ -16,9 +16,9 @@ What question does this experiment answer? (one or two sentences)
 
 ## Schema
 
-[EasyEDA circuit](<link>) · [Falstad circuit](<link>)
+[Open the Falstad simulation](<link>) · source: [sim/<ID>-<name>.txt](sim/<ID>-<name>.txt)
 
-![<name>](assets/img/<name>.png)
+<iframe src="<link>" width="100%" height="500" style="border:1px solid #ccc" title="<name> – Falstad simulation"></iframe>
 
 ## Theory & Calculation
 

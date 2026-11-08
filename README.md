@@ -52,7 +52,8 @@ In this section, I document my personal observations, notes, and insights from b
 
 ## Tools Used
 I primarily use the following tools for designing and simulating my circuits:
-- **EasyEDA**: For circuit design and simulations.
+- **Falstad CircuitJS**: For circuit simulations, embedded in the project site.
+- **LTspice**: For accurate simulations when precision matters.
 - **Fritzing**: For creating circuit diagrams and PCB layouts.
 - **KiCad**: For advanced PCB design.
 
