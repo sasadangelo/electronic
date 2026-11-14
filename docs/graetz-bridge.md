@@ -129,7 +129,6 @@ it's the transformer's internal resistance, see [PS-01](simple-transformer.md).
 - [ ] Remove one diode: the bridge becomes a **half-wave** rectifier. Watch the 50 Hz gaps on the scope.
 - [ ] Add a capacitor (e.g. 1000 µF) across the load: the pulsating DC becomes almost flat, with a small **ripple**.
       This is the next experiment, PS-03.
-- [ ] In Falstad, put an ammeter in series with one diode: it conducts only every other half cycle.
 
 ## Conclusion
 
@@ -138,4 +137,4 @@ The drop is not a fixed 1.4 V: it depends on the current, so the output depends 
 Peak, RMS and average values differ a lot on this waveform, and each instrument shows a different one:
 always know which value you are reading.
 
-Next: PS-03 – Reservoir capacitor & ripple (see the [roadmap](roadmap.md)).
+Next: [PS-03 – Reservoir capacitor & ripple](reservoir-capacitor.md).

@@ -16,6 +16,7 @@ A progressive path of electronics experiments: calculate, simulate, build, measu
 | F-01 | [Simple LED](simple-led.md) | Foundations |
 | PS-01 | [Simple Transformer](simple-transformer.md) | Power Supplies |
 | PS-02 | [Graetz Bridge](graetz-bridge.md) | Power Supplies |
+| PS-03 | [Reservoir Capacitor & Ripple](reservoir-capacitor.md) | Power Supplies |
 
 ## Reference
 
