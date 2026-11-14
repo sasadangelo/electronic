@@ -1,9 +1,5 @@
 # PS-02 – Graetz Bridge
 
-**Track:** Power Supplies
-**Prerequisites:** [PS-01 – Simple Transformer](simple-transformer.md)
-**Status:** 🔧 in progress (simulation done, bench measurements to do)
-
 ## Goal
 
 Convert the 230 V AC, 50 Hz mains into a lower **pulsating DC** voltage with a step-down transformer
@@ -20,20 +16,21 @@ and a Graetz bridge (full-wave rectifier), and see how the diode voltage drop ch
 
 ## Schema
 
-[Open the Falstad simulation](https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAUgoqoQFMBaMMAKADcQ8qxiVOrsaKOBohBSKpOgIWAFXAZCIFCgAsyjHxR48w9TEgIUYDAk0Y8CMKsjYE2EAxiE1vUjsImrhJU9jwSPDAzLEhtG1wHGFJiFgB3BSUePhMlFX14xLEhVOUdKBYAE2yqNQFCXWTlEEK6ADMAQwBXABsAFyKS5RsxCrzdPlrG1o7i7D6q1TA0nsH65vbO8YH8qZnSmvmRzOXwXl7KwkkdiaONFLPITMwL0s1lNQKEm-7zsSMnt7s+Xe-P34+u20uiuCUEpR64K6oK6UNUXGhmTW3So8IhxwATiA0SjsQiodx4HAWAAHcCqdRVazqKEOCCEonEhIIqkUvZ8GHU9lZKow-E5NkEzJcqG5IVkhBssoUQVCKLCMCMpl49Ey9TSmE4qGSmlCK4Ae2UDkI+mxkGIAyk9PALCAA) · source: [sim/PS-02-graetz-bridge.txt](sim/PS-02-graetz-bridge.txt) (*File → Import From Text*)
+[Open the Falstad simulation](https://www.falstad.com/circuit/circuitjs.html?cct=%24%201%200.000005%2010.20027730826997%2050%205%2050%205e-11%0Av%2080%20192%2080%20320%200%201%2050%20325%200%200%200.5%0AT%20176%20224%20272%20288%200%204%200.05217572785140353%20-0.6249299886175166%20-0.00006981577702840303%200.999%0Aw%20176%20192%20176%20224%200%0Aw%20176%20320%20176%20288%200%0Ad%20320%20240%20368%20192%202%20default%0Ad%20320%20240%20368%20288%202%20default%0Ad%20368%20192%20416%20240%202%20default%0Ad%20368%20288%20416%20240%202%20default%0Aw%20368%20192%20368%20160%200%0Aw%20368%20160%20296%20160%200%0Aw%20272%20160%20272%20224%200%0Aw%20272%20288%20272%20352%200%0Aw%20272%20352%20296%20352%200%0Aw%20368%20352%20368%20288%200%0Aw%20320%20240%20320%20320%200%0Aw%20320%20320%20480%20320%200%0A370%20416%20240%20480%20240%201%201%0Ar%20480%20240%20480%20320%200%20100000%0Ap%20144%20192%20144%20320%203%201%200%2010000000%0Aw%2080%20192%20144%20192%200%0Aw%20144%20192%20176%20192%200%0Aw%2080%20320%20144%20320%200%0Aw%20144%20320%20176%20320%200%0Ap%20544%20240%20544%20320%203%202%200%2010000000%0Aw%20480%20240%20544%20240%200%0Aw%20480%20320%20544%20320%200%0Aw%20296%20160%20272%20160%200%0Aw%20296%20352%20368%20352%200%0Ap%20296%20160%20296%20352%203%202%200%2010000000%0Ax%2040%20260%20128%20263%204%2016%20Primary%5Cs%28RMS%29%0Ax%20228%20400%20340%20403%204%2016%20Secondary%5Cs%28peak%29%0Ax%20420%20224%20476%20227%204%2016%20Ammeter%0Ax%20560%20284%20660%20287%204%2016%20Output%5Cs%28peak%29%0Ao%2023%2064%200%204098%2020%200.1%200%201%0A) · source: [sim/PS-02-graetz-bridge.txt](sim/PS-02-graetz-bridge.txt) (*File → Import From Text*)
 
-<iframe src="https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAUgoqoQFMBaMMAKADcQ8qxiVOrsaKOBohBSKpOgIWAFXAZCIFCgAsyjHxR48w9TEgIUYDAk0Y8CMKsjYE2EAxiE1vUjsImrhJU9jwSPDAzLEhtG1wHGFJiFgB3BSUePhMlFX14xLEhVOUdKBYAE2yqNQFCXWTlEEK6ADMAQwBXABsAFyKS5RsxCrzdPlrG1o7i7D6q1TA0nsH65vbO8YH8qZnSmvmRzOXwXl7KwkkdiaONFLPITMwL0s1lNQKEm-7zsSMnt7s+Xe-P34+u20uiuCUEpR64K6oK6UNUXGhmTW3So8IhxwATiA0SjsQiodx4HAWAAHcCqdRVazqKEOCCEonEhIIqkUvZ8GHU9lZKow-E5NkEzJcqG5IVkhBssoUQVCKLCMCMpl49Ey9TSmE4qGSmlCK4Ae2UDkI+mxkGIAyk9PALCAA" width="100%" height="500" style="border:1px solid #ccc" title="Graetz Bridge – Falstad simulation"></iframe>
+<iframe src="https://www.falstad.com/circuit/circuitjs.html?cct=%24%201%200.000005%2010.20027730826997%2050%205%2050%205e-11%0Av%2080%20192%2080%20320%200%201%2050%20325%200%200%200.5%0AT%20176%20224%20272%20288%200%204%200.05217572785140353%20-0.6249299886175166%20-0.00006981577702840303%200.999%0Aw%20176%20192%20176%20224%200%0Aw%20176%20320%20176%20288%200%0Ad%20320%20240%20368%20192%202%20default%0Ad%20320%20240%20368%20288%202%20default%0Ad%20368%20192%20416%20240%202%20default%0Ad%20368%20288%20416%20240%202%20default%0Aw%20368%20192%20368%20160%200%0Aw%20368%20160%20296%20160%200%0Aw%20272%20160%20272%20224%200%0Aw%20272%20288%20272%20352%200%0Aw%20272%20352%20296%20352%200%0Aw%20368%20352%20368%20288%200%0Aw%20320%20240%20320%20320%200%0Aw%20320%20320%20480%20320%200%0A370%20416%20240%20480%20240%201%201%0Ar%20480%20240%20480%20320%200%20100000%0Ap%20144%20192%20144%20320%203%201%200%2010000000%0Aw%2080%20192%20144%20192%200%0Aw%20144%20192%20176%20192%200%0Aw%2080%20320%20144%20320%200%0Aw%20144%20320%20176%20320%200%0Ap%20544%20240%20544%20320%203%202%200%2010000000%0Aw%20480%20240%20544%20240%200%0Aw%20480%20320%20544%20320%200%0Aw%20296%20160%20272%20160%200%0Aw%20296%20352%20368%20352%200%0Ap%20296%20160%20296%20352%203%202%200%2010000000%0Ax%2040%20260%20128%20263%204%2016%20Primary%5Cs%28RMS%29%0Ax%20228%20400%20340%20403%204%2016%20Secondary%5Cs%28peak%29%0Ax%20420%20224%20476%20227%204%2016%20Ammeter%0Ax%20560%20284%20660%20287%204%2016%20Output%5Cs%28peak%29%0Ao%2023%2064%200%204098%2020%200.1%200%201%0A" width="100%" height="500" style="border:1px solid #ccc" title="Graetz Bridge – Falstad simulation"></iframe>
 
 *Interactive on the [project site](https://sasadangelo.github.io/electronic/graetz-bridge); on github.com use the link above.*
 
 The circuit contains:
 
 * **AC source**: 230 V RMS, 50 Hz. Falstad wants the **peak** value: 230 × √2 ≈ **325 V**.
-* **Transformer**: ratio 0.052 (≈ 12/230), see [PS-01](simple-transformer.md).
+* **Transformer**: ratio 0.05218 (≈ 12/230), see [PS-01](simple-transformer.md).
 * **Graetz bridge**: four diodes. In each half cycle two of them conduct and steer the current
   through the load always in the same direction: the negative half wave is flipped up.
 * **Load resistor**: 100 kΩ by default; change it (double-click) to see how the output changes with current.
-* **Meters**: a voltmeter (RMS) on the primary, a voltmeter on the output, and a **scope** showing the output waveform.
+* **Meters**: a voltmeter (RMS) on the primary, peak voltmeters on the secondary and on the output,
+  an ammeter (RMS) in series with the load, and a **scope** showing the output waveform.
 
 ## Theory & Calculation
 
@@ -71,17 +68,46 @@ So with a heavy load (low resistance) the output peak is lower than with a light
 
 ## Simulation Results
 
-Change the load resistor and read the output peak (voltmeter in "peak/max" mode, or the scope).
-The expected peak current is Vpout / R; the drop is the secondary peak minus the output peak.
+### The drop depends on the load
 
-| Load R | Peak current (calc.) | Vpout (calc., 2 × 0.7 V) | Vpout (Falstad) | Bridge drop (Falstad) |
-|---|---|---|---|---|
-| 100 Ω | ≈ 156 mA | 15.57 V | | |
-| 1 kΩ | ≈ 15.6 mA | 15.57 V | | |
-| 10 kΩ | ≈ 1.6 mA | 15.57 V | | |
-| 100 kΩ | ≈ 0.16 mA | 15.57 V | | |
+A diode is not a fixed 0.7 V "battery": its forward voltage **depends on the current** flowing through it
+(exponential I-V curve). Roughly, every time the current is **multiplied by 10**, the drop of a silicon diode
+grows by **60–120 mV**. The load resistor sets the current, so:
 
-*To fill in from the Falstad simulation.* Expected trend: the drop grows as the resistance decreases (more current).
+- **high resistance → small current → small drop** (the output peak stays close to the secondary peak);
+- **low resistance → large current → larger drop** (the output peak goes down).
+
+That's why a rectifier's output voltage changes with the load, even before adding any capacitor or regulator.
+
+### Measurements
+
+The secondary peak in Falstad is 325 V × 0.05218 ≈ **16.96 V** (same as the calculated 16.97 V).
+For each load, read the output peak (voltmeter in "peak/max" mode, or the scope); the bridge drop is
+16.96 V minus the output peak, and each of the two conducting diodes takes half of it.
+
+⚠️ A voltmeter in peak/max mode **holds the highest value** it has seen: after changing the resistor,
+**reset the simulation** (*Reset* button) before reading, otherwise you keep reading the old value.
+
+| Load R | Current RMS (Falstad) | Peak current (Vpout / R) | Vpout (calc., 2 × 0.7 V) | Vpout (Falstad) | Bridge drop | Per diode |
+|---|---|---|---|---|---|---|
+| 100 kΩ | 0.115 mA | 0.16 mA | 15.57 V | 16.23 V | 0.73 V | 0.36 V |
+| 10 kΩ | 1.12 mA | 1.6 mA | 15.57 V | 15.99 V | 0.96 V | 0.48 V |
+| 1 kΩ | 10.9 mA | 15.8 mA | 15.57 V | 15.76 V | 1.20 V | 0.60 V |
+| 100 Ω | 107 mA | 155 mA | 15.57 V | 15.52 V | 1.44 V | 0.72 V |
+
+What the numbers show:
+
+- **Every time the current is multiplied by 10, the bridge drop grows by 0.236 V** (≈ 118 mV per diode):
+  0.73 → 0.96 → 1.20 → 1.44 V. This is the logarithmic behaviour of the diode, measured cleanly.
+- **The 0.7 V design value matches only around 150 mA.** At light loads the real drop is much smaller,
+  so the output is higher than calculated; at heavy loads it would be even larger than 1.4 V.
+- **Peak vs. RMS current.** For a perfect rectified sine, I_peak = I_rms × √2. Here I_rms × √2 is 1–2% lower
+  than Vpout / R: near zero volts the diodes don't conduct yet, so the waveform has small gaps and is not a perfect sine.
+- With this waveform the minimum is 0 V, so the **peak** and **peak-to-peak** readings coincide.
+
+Notice also that Falstad's `default` diode model has a **lower forward voltage** than a real silicon rectifier:
+a 1N4007 drops about 0.5 V at very small currents and 0.7–0.9 V at a few hundred mA.
+The 0.7 V design value is closer to the real part. Double-click a diode to choose a different model.
 
 ## Real-World Measurements
 
