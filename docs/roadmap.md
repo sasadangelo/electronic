@@ -89,7 +89,7 @@ Everything else builds on this. Short experiments, mostly multimeter work.
 | ID | Experiment | You learn | Key measurement | Status |
 |---|---|---|---|---|
 | PS-01 | [Simple Transformer](simple-transformer.md) | Turns ratio, RMS/peak | Vrms, Vp | ✅ |
-| PS-02 | [Graetz Bridge](graetz-bridge.md) | Full-wave rectification, diode drop | Vdrop vs. load | ✅ |
+| PS-02 | [Graetz Bridge](graetz-bridge.md) | Full-wave rectification, diode drop | Vdrop vs. load | 🔧 |
 | PS-03 | Reservoir capacitor & ripple | Vripple ≈ I / (2·f·C) | Ripple vs. C and load | ⬜ |
 | PS-04 | Zener shunt regulator | Simplest regulation, its inefficiency | Line/load regulation | ⬜ |
 | PS-05 | Series-pass regulator (zener + transistor) | How a linear regulator works inside | Regulation vs. PS-04 | ⬜ |
